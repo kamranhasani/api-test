@@ -1,0 +1,16 @@
+{
+    "name": "kamran/api",
+    "description": "api-test",
+    "license": "mit",
+    "autoload": {
+        "psr-4": {
+            "Kamran\\Api\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "kamran hasani"
+        }
+    ],
+    "require": {}
+}
