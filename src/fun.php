@@ -30,6 +30,7 @@ public function Insert($name,$email){
 	$insert->bindvalue(2,$email);
 	$insert->execute();
 	return $insert;
+	
 }
 
 
