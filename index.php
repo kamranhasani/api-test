@@ -22,7 +22,7 @@ $_SESSION['token']=$apitoken;
         <div class="card">
             <div class="card-header">
                 <h3>API-TEST</h3>
-</div>
+                    </div>
             
             <div class="card-body">
 
@@ -47,7 +47,7 @@ $_SESSION['token']=$apitoken;
                             <option> Function</option>
                             <option value="1"> insert</option>
                             <option value="2" >show</option>
-                            <option value="3" >update user </option>
+                            <option value="3" >update user</option>
                             <option value="4" >delete</option>
                             </select>
 
