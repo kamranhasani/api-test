@@ -2,7 +2,7 @@
 
 require "vendor/autoload.php";
 use  Kamran\Api\fun;
-header('Content-Type: application/json; charset=utf-8');
+//header('Content-Type: application/json; charset=utf-8');
 
 //---------apicode-start-------
 $metod=$_SERVER['REQUEST_METHOD'];
@@ -16,10 +16,11 @@ $funapi= new fun();
 $funapi->DBconect();
 
 switch($role){
+
 case '1':
 if(!empty($name)&&!empty($email)){
     
-    $Insert= $funapi->Insert($name,$email);
+    $Insert=$funapi->Insert($name,$email);
     if($Insert){
     $response["result"] = "success";
     $response["message"] = "User Registered Successfully !";
@@ -74,13 +75,8 @@ if(!empty($name)&&!empty($email)){
                             }
                 
 }
-echo json_encode($response);
-
-
-
+                              echo json_encode($response);
 
 
 //---------apicode-end-------
-
-
 ?>

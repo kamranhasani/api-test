@@ -44,7 +44,6 @@ if(isset($_POST['api'])){
      $url="http://127.0.0.1/API/api.php/".$name."/".$email."/".$role;
      $urll = filter_var($url, FILTER_SANITIZE_URL);
      echo  curl($urll);
-     
     }
     else
     {
